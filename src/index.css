@@ -2,13 +2,6 @@ html, body {
   min-height: 100vh;
 }
 
-.centered-column-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -26,6 +19,21 @@ main {
   padding: 1em;
   background-color: #0C2D48;
   font-size: large;
+}
+
+nav {
+  padding-bottom: 1em;
+}
+
+a {
+  color: white;
+}
+
+.centered-column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #main-content-header {
