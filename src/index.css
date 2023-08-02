@@ -1,0 +1,43 @@
+html, body {
+  min-height: 100vh;
+}
+
+.centered-column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+  list-style-position: inside;
+  background-color: #366088;
+  margin: 0;
+}
+
+main {
+  width: 70%;
+  margin: 1em auto;
+  padding: 1em;
+  background-color: #0C2D48;
+  font-size: large;
+}
+
+#reviews-header-section {
+  
+}
+
+#main-content-header {
+  color: #0C2D48;
+  background-color: #B1D4E0;
+  padding: 0.5em 3em;
+}
+
+#page-header-container, #page-footer-container {
+  background-color: #0C2D48;
+}
