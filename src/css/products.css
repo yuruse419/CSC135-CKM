@@ -1,0 +1,126 @@
+/* set page to viewport size at minimum */
+html, body {
+  min-height: 100vh;
+}
+
+/* set body as column flex container */
+/* body's flex items are spaced to take up body's entire height */
+/* color and text-align properties are cascaded down to children */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+  list-style-position: inside;
+  background-color: #366088;
+  margin: 0;
+}
+
+/* set main content area as a grid container */
+/* grid size: three columns by four rows */
+/* columns maintain equal widths */
+/* main content takes up 70% of body's width */
+main {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "header header header"
+  "text text text"
+  "hr hr hr"
+  "card-one card-two card-three";
+  width: 70%;
+  margin: 1em auto;
+  padding: 1em;
+  background-color: #0C2D48;
+  font-size: large;
+}
+
+/* additional padding under nav links */
+nav {
+  padding-bottom: 1em;
+}
+
+/* overwrite anchor text color */
+a {
+  color: white;
+}
+
+/* sizing limit on images */
+/* images appear clickable */
+img {
+  max-width: 50%;
+  cursor: pointer;
+}
+
+/* class for common flex containers */
+.centered-column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* header/footer background color */
+#page-header-container, #page-footer-container {
+  background-color: #0C2D48;
+}
+
+/* main content header styling */
+/* occupies "header" grid areas */
+#main-content-header {
+  color: #0C2D48;
+  background-color: #B1D4E0;
+  padding: 0.5em 3em;
+  margin: auto;
+  grid-area: header;
+}
+
+/* main content text occupies "text" grid areas */
+#main-content-text {
+  grid-area: text;
+}
+
+/* the horizontal rule occupies the "hr" grid areas */
+#main-content-hr {
+  width: 100%;
+  grid-area: hr;
+}
+
+/* product card styling */
+.product-card {
+  color: #0C2D48;
+  background-color: #B1D4E0; 
+  margin: 1em 2em;
+  padding: 0.5em;
+}
+
+/* set product card one's grid area */
+#product-card-one {
+  grid-area: card-one;
+}
+
+/* set product card two's grid area */
+#product-card-two {
+  grid-area: card-two;
+}
+
+/* set product card three's grid area */
+#product-card-three {
+  grid-area: card-three;
+}
+
+/* breakpoint for smaller screens */
+/* display each product card on its own row */
+@media screen and (max-width: 780px) {
+  main {
+    grid-template-areas: 
+    "header header header"
+    "text text text"
+    "hr hr hr"
+    "card-one card-one card-one"
+    "card-two card-two card-two"
+    "card-three card-three card-three";
+  }
+}
