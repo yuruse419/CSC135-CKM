@@ -1,3 +1,17 @@
+/* 
+  I certify that the CSS file I am submitting is all my own work. 
+  None of it is copied from any source or any person. 
+  Signed: Keagan Haar.
+*/
+
+/*
+  Author: Keagan Haar
+  Date: 8/06/2023 
+  Class: CSC135 
+  Project: Part 5
+  Description: Create project page with grid layout.
+*/
+ 
 html, body {
     min-height: 100vh;
 }
