@@ -1,7 +1,22 @@
+/*
+  I certify that the CSS file I am submitting is all my own work. 
+  None of it is copied from any source or any person. 
+  Signed: Keagan Haar, Chase Shertzer.
+*/
+
+/*
+  Author: Keagan Haar, Chase Shertzer
+  Date: 8/06/2023 
+  Class: CSC135 
+  Project: Part 5
+  Description: Create project page with grid layout.
+*/
+
 /* website height */
 html, body {
   min-height: 100vh;
 }
+
 
 /* flexing and organizing body */
 body {
@@ -103,4 +118,8 @@ a {
   .images{
     flex-direction: column;
   }
+}
+=======
+#page-header-container, #page-footer-container {
+  background-color: #0C2D48;
 }

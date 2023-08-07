@@ -1,3 +1,17 @@
+/* 
+  I certify that the CSS file I am submitting is all my own work. 
+  None of it is copied from any source or any person. 
+  Signed: Keagan Haar.
+*/
+
+/*
+  Author: Keagan Haar
+  Date: 8/06/2023 
+  Class: CSC135 
+  Project: Part 5
+  Description: Create project page with grid layout.
+*/
+ 
 /* Website boundaries */
 html, body {
     min-height: 100vh;
@@ -14,6 +28,7 @@ body {
     background-color: #366088;
     margin: 0;
 }
+
 
 /* Starting grid and design */
 main {
@@ -32,6 +47,7 @@ main {
     font-size: large;
   }
 
+
 /* Nav padding */
 nav {
     padding-bottom: 1em;
@@ -41,6 +57,7 @@ nav {
 a {
     color: white;
   }
+
 
 /* Flex and design for header */
 .centered-column-flex {
@@ -55,6 +72,7 @@ a {
     background-color: #0C2D48;
   }
 
+
 /* Main content design */
 #main-content-header {
     color: #0C2D48;
@@ -63,6 +81,7 @@ a {
     margin: auto;
     grid-area: header;
   }
+
 
 /* Horizaontal rule creation */
 #main-content-hr {
@@ -85,15 +104,18 @@ a {
     grid-area: text-one;
 }
 
+
 /* Second ID grid */
 #text-section-two {
     grid-area: text-two;
 }
 
+
 /* Third ID grid */
 #table {
     grid-area: table;
 }
+
 
 /* Different screen size adjustments */
 @media screen and (max-width: 780px) {
