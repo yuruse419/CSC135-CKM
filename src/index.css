@@ -1,4 +1,4 @@
-/* 
+/*
   I certify that the CSS file I am submitting is all my own work. 
   None of it is copied from any source or any person. 
   Signed: Keagan Haar, Chase Shertzer.
@@ -12,10 +12,13 @@
   Description: Create project page with grid layout.
 */
 
+/* website height */
 html, body {
   min-height: 100vh;
 }
 
+
+/* flexing and organizing body */
 body {
   display: flex;
   flex-direction: column;
@@ -27,6 +30,7 @@ body {
   margin: 0;
 }
 
+/* organize/design main */
 main {
   width: 70%;
   margin: 1em auto;
@@ -35,14 +39,17 @@ main {
   font-size: large;
 }
 
+/* nav padding */
 nav {
   padding-bottom: 1em;
 }
 
+/* nav color */
 a {
   color: white;
 }
 
+/* flexing header */
 .centered-column-flex {
   display: flex;
   flex-direction: column;
@@ -50,12 +57,69 @@ a {
   align-items: center;
 }
 
+/* header design */
 #main-content-header {
   color: #0C2D48;
   background-color: #B1D4E0;
   padding: 0.5em 3em;
 }
 
+/* header design */
+#page-header-container, #page-footer-container {
+  background-color: #0C2D48;
+}
+
+/* main content organization and functionality */
+.section {
+  position: relative;
+  color: #0C2D48;
+  background-color: #B1D4E0; 
+  margin: 1em 2em;
+  padding: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* image positions */
+.images {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+}
+
+/* first image text */
+.text-one {
+  position: absolute;
+  top: 57%;
+  left: 19%;
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  -webkit-text-stroke: 0.25px white;
+}
+
+/* second image text */
+.text-two {
+  position: absolute;
+  top: 57%;
+  left: 67%;
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  -webkit-text-stroke: 0.25px white;
+}
+
+/* functionality for smaller screens */
+@media screen and (max-width: 780px) {
+  .images{
+    flex-direction: column;
+  }
+}
+=======
 #page-header-container, #page-footer-container {
   background-color: #0C2D48;
 }
