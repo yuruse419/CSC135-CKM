@@ -1,8 +1,9 @@
+/* Website boundaries */
 html, body {
     min-height: 100vh;
 }
 
-
+/* Body flex and design */
 body {
     display: flex;
     flex-direction: column;
@@ -14,7 +15,7 @@ body {
     margin: 0;
 }
 
-
+/* Starting grid and design */
 main {
     display: grid;
     justify-content: center;
@@ -31,17 +32,17 @@ main {
     font-size: large;
   }
 
-
+/* Nav padding */
 nav {
     padding-bottom: 1em;
   }
   
-  
+/* Nav color */
 a {
     color: white;
   }
 
-
+/* Flex and design for header */
 .centered-column-flex {
     display: flex;
     flex-direction: column;
@@ -49,11 +50,12 @@ a {
     align-items: center;
   }
 
+/* Header color */
 #page-header-container, #page-footer-container {
     background-color: #0C2D48;
   }
 
-
+/* Main content design */
 #main-content-header {
     color: #0C2D48;
     background-color: #B1D4E0;
@@ -62,13 +64,13 @@ a {
     grid-area: header;
   }
 
-
+/* Horizaontal rule creation */
 #main-content-hr {
     width: 100%;
     grid-area: hr;
   }
 
-
+/* Main content class design */
 .sections {
     color: #0C2D48;
     background-color: #B1D4E0; 
@@ -78,22 +80,22 @@ a {
     margin-right: auto;
 }
 
-
+/* First ID grid */
 #text-section-one {
     grid-area: text-one;
 }
 
-
+/* Second ID grid */
 #text-section-two {
     grid-area: text-two;
 }
 
-
+/* Third ID grid */
 #table {
     grid-area: table;
 }
 
-
+/* Different screen size adjustments */
 @media screen and (max-width: 780px) {
   main {
     grid-template-areas: 

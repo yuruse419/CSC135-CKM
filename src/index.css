@@ -1,7 +1,9 @@
+/* website height */
 html, body {
   min-height: 100vh;
 }
 
+/* flexing and organizing body */
 body {
   display: flex;
   flex-direction: column;
@@ -13,6 +15,7 @@ body {
   margin: 0;
 }
 
+/* organize/design main */
 main {
   width: 70%;
   margin: 1em auto;
@@ -21,14 +24,17 @@ main {
   font-size: large;
 }
 
+/* nav padding */
 nav {
   padding-bottom: 1em;
 }
 
+/* nav color */
 a {
   color: white;
 }
 
+/* flexing header */
 .centered-column-flex {
   display: flex;
   flex-direction: column;
@@ -36,16 +42,19 @@ a {
   align-items: center;
 }
 
+/* header design */
 #main-content-header {
   color: #0C2D48;
   background-color: #B1D4E0;
   padding: 0.5em 3em;
 }
 
+/* header design */
 #page-header-container, #page-footer-container {
   background-color: #0C2D48;
 }
 
+/* main content organization and functionality */
 .section {
   position: relative;
   color: #0C2D48;
@@ -56,6 +65,7 @@ a {
   margin-right: auto;
 }
 
+/* image positions */
 .images {
   position: relative;
   display: flex;
@@ -66,6 +76,7 @@ a {
   height: auto;
 }
 
+/* first image text */
 .text-one {
   position: absolute;
   top: 57%;
@@ -76,6 +87,7 @@ a {
   -webkit-text-stroke: 0.25px white;
 }
 
+/* second image text */
 .text-two {
   position: absolute;
   top: 57%;
@@ -86,8 +98,9 @@ a {
   -webkit-text-stroke: 0.25px white;
 }
 
+/* functionality for smaller screens */
 @media screen and (max-width: 780px) {
   .images{
-    flex-direction: row;
+    flex-direction: column;
   }
 }
