@@ -1,0 +1,210 @@
+/* 
+  I certify that the CSS file I am submitting is all my own work. 
+  None of it is copied from any source or any person. 
+  Signed: Keagan Haar.
+*/
+
+/*
+  Author: Keagan Haar
+  Date: 8/13/2023 
+  Class: CSC135 
+  Project: Final
+  Description: Final project.
+*/
+
+/* 
+  Light Mode
+    body: light-color-scheme-color-two dark-text-color
+    a: dark-text-color
+    #page-header-container: light-color-scheme-color-one
+    #page-footer-container: light-color-scheme-color-one
+    #main: light-color-scheme-color-one
+    #main-header-container: light-color-scheme-color-three
+    .main-content-container: light-color-scheme-color-three
+    #color-mode-btn: dark-color-scheme-color-one light-text-color
+
+  Dark Mode
+    body: dark-color-scheme-color-two light-text-color
+    a: light-text-color
+    #page-header-container: dark-color-scheme-color-one
+    #page-footer-container: dark-color-scheme-color-one
+    #main: dark-color-scheme-color-one
+    #main-header-container: dark-color-scheme-color-three
+    .main-content-container: dark-color-scheme-color-three
+    #color-mode-btn: light-color-scheme-color-one dark-text-color
+*/
+/* color schemes all listed below */
+.light-color-scheme-color-one {
+    background-color: #d4eafe;
+    border: 1px solid #0C2D48;
+}
+  
+.light-color-scheme-color-two {
+    background-color: #F0FFFF;
+    border: 1px solid #0C2D48;
+}
+  
+.light-color-scheme-color-three {
+    background-color: #FFF8DC;
+    border: 1px solid #0C2D48;
+}
+  
+.dark-color-scheme-color-one {
+    background-color: #0C2D48;
+    border: 1px solid #FFFFFF;
+}
+  
+.dark-color-scheme-color-two {
+    background-color: #2b444d;
+    border: 1px solid #FFFFFF;
+}
+  
+.dark-color-scheme-color-three {
+    background-color: #366088;
+    border: 1px solid #FFFFFF;
+}
+  
+.light-text-color {
+    color: #FFFFFF;
+}
+  
+.dark-text-color {
+    color: #0C2D48;
+}
+
+/* html sizing */
+html, body {
+    min-height: 100vh;
+  }
+  
+/* Flexing and organizing body */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    list-style-position: inside;
+    margin: 0;
+}
+
+  /* Design main */
+main {
+    width: 70%;
+    margin: 1em auto;
+    padding: 1em;
+    font-size: large;
+}
+  
+  /* Nav padding */
+nav {
+    padding-bottom: 1em;
+}
+  
+  
+  /* Flexing header */
+.centered-column-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ /* Form font */
+form{
+    font-size: 24px;
+    text-align: left;
+}
+
+ /* Section font */
+#name {
+    font-size: 24px;
+}
+/* Section font */
+#email {
+    font-size: 24px;
+}
+/* Section font */
+#phone {
+    font-size: 24px;
+}
+/* Section font */
+#address {
+    font-size: 24px;
+}
+/* Section font */
+#comments {
+    font-size: 24px;
+}
+/* Section font */
+#questions {
+    font-size: 24px;
+}
+
+/* Text box positioning */
+.comments {
+    position: absolute;
+    top: 42%;
+    left: 57%;
+    font-size: 24px;
+}
+
+/* Text box positioning */
+.questions {
+    position: absolute;
+    top: 45%;
+    left: 54%;
+}
+
+/* Footer settings */
+#page-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+/* Button cursor */
+  #color-mode-btn {
+    cursor: pointer;
+}
+  
+  /* Hide elements when not using */
+  .small-screen, .medium-screen {
+    display: none;
+}
+
+
+/* Medium screen settings */
+@media screen and (max-width: 780px) {
+    .large-screen {
+      display: none;
+    }
+  
+    .medium-screen {
+        display: block;
+    }
+  
+#main {
+      font-size: small;  
+}
+}
+  
+/* Small screen settings */
+@media screen and (max-width: 480px) {
+    .medium-screen {
+        display: none;
+    }
+  
+    .small-screen {
+        display: block;
+    }
+  
+    details {
+      padding-bottom: 1em;
+    }
+  
+    #main {
+        font-size: smaller;
+    }
+}
+

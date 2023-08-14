@@ -1,0 +1,118 @@
+<!--
+  I certify that the HTML file I am submitting is all my own work.
+  None of it is copied from any source or any person.
+  Signed: Keagan Haar.
+-->
+
+<!--
+  Author: Keagan Haar
+  Date: 08/13/2023
+  Class: CSC135
+  Project: Final
+  Description: Final project.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Start head -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CCB Sign Up</title>
+	<link rel="stylesheet" href="styles.css">
+    <script src="java.js"></script>
+</head>
+
+<!-- Start body -->
+<body class= "light-color-scheme-color-two dark-text-color">
+    <!-- Begin page header -->
+    <header id="page-header-container" class="centered-column-flex light-color-scheme-color-one">
+        <h1>Celtic Chic Boutique</h1>
+  
+        <a hidden href="#main">Skip Nav</a>
+
+        <!-- Navbar for large screens -->
+        <nav class="large-screen">
+          <a class="dark-text-color" href="../index.html">Home</a> |
+          <a class="dark-text-color" href="./Aboutus.html">About Us</a> |
+          <a class="dark-text-color" href="#">Products</a> |
+          <a class="dark-text-color" href="./reviews.html">Reviews</a> |
+          <a class="dark-text-color" href="">Sign Up</a>
+        </nav>
+    
+        <!-- Navbar for medium screens -->
+        <nav class="medium-screen">
+          <a class="dark-text-color" href="../index.html">Home</a> |
+    
+          <!-- Dropdown nav menu -->
+          <details style="display: inline">
+            <summary>More</summary>
+    
+            <a class="dark-text-color" href="./Aboutus.html">About Us</a> |
+            <a class="dark-text-color" href="#">Products</a> |
+            <a class="dark-text-color" href="./reviews.html">Reviews</a> |
+            <a class="dark-text-color" href="">Sign Up</a>
+          </details>
+        </nav>
+    
+        <!-- Dropdown details for small screens -->
+        <details class="small-screen">
+          <summary>Links</summary>
+    
+          <a class="dark-text-color" href="../index.html">Home</a>
+          <br>
+          <a class="dark-text-color" href="./Aboutus.html">About Us</a>
+          <br>
+          <a class="dark-text-color" href="#">Products</a>
+          <br>
+          <a class="dark-text-color" href="./reviews.html">Reviews</a>
+          <br>
+          <a class="dark-text-color" href="">Sign Up</a>
+        </details>
+    </header>
+  
+    <!-- Begin main content -->
+    <main id="main" class="light-color-scheme-color-one">
+        <section id="main-header-container" class="light-color-scheme-color-three">
+            <h2 id="h2">Sign Up</h2>
+        </section>
+        <hr>
+        <!-- Main text -->
+        <p>If you are interested in joining our rewards program, feel free to join below! New users will</p>
+
+        <p>get a free $5 coupon for our restaraunt. (Restrictions may apply)*</p><br><br>
+        <!-- Form begins -->
+        <form id="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" class="light-color-scheme-color-three"><br><br><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="mm/dd/yyyy" class="light-color-scheme-color-three"><br><br><br><br>
+
+            <label for="phone">Address:</label>
+            <input type="text" id="phone" name="phone" placeholder="(xxx) xxx-xxxx" class="light-color-scheme-color-three"><br><br><br><br>
+            
+            <label for="address">Home Address:</label>
+            <input type="text" id="address" name="address" placeholder="1234 Lake Street" class="light-color-scheme-color-three"><br><br><br><br>
+
+            <input type="submit" value="Submit"> 
+			<input type="reset" value="Reset">
+            <!-- Text for questions box -->
+            <div class="comments">
+                <lable for="cq">Any other questions or comments?</label>
+            </div>
+            <!-- Questions box -->
+            <div class="questions">
+                <textarea id="questions" rows="12" cols="33" placeholder="Leave your message here..." class="light-color-scheme-color-three"></textarea>
+            </div>
+        </form>
+    </main>
+    <!-- Footer begins -->
+    <footer id="page-footer-container" class="light-color-scheme-color-one">
+        <input id="color-mode-btn" class="dark-color-scheme-color-one light-text-color" type="button" value="Dark Mode" onclick="toggleMode()">
+        <label hidden for="color-mode-btn">Dark Mode</label>
+        
+        <p>Created by Chase Shertzer & Keagan Haar</p>
+    </footer>      
+</body>
+</html>
